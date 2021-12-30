@@ -471,6 +471,9 @@ set(plugins
 
   add_library(ForceVisual SHARED src/force_visual/force_visual.cpp)
   list(APPEND plugins ForceVisual)
+
+  add_library(TSAeroPlugin SHARED src/gazebo_ts_aerodynamic_plugin.cpp)
+  list(APPEND plugins TSAeroPlugin)
 #endif()
 
 foreach(plugin ${plugins})
